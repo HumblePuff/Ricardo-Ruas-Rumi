@@ -1,0 +1,23 @@
+<div class="container">
+  <img class="logo" src="https://media.licdn.com/dms/image/D4D03AQEyEKXbPeDZ-Q/profile-displayphoto-shrink_400_400/0/1668285932675?e=1681344000&v=beta&t=9NEPOTcSjvQ_21Yroef6giOOT38vUdP4ToHMQz0ufZU" alt="Logo Evo One">
+  <div *ngIf="router.url === '/occurences'" class="search-bar">
+    <form class="wrapper" [formGroup]="form">
+      <div class="date-input-wrapper">
+        <input formControlName="dateInput" mask="00/00/0000" placeholder="Data"  type="text"/>
+      </div>
+      <div class="status-input-wrapper">
+        <select formControlName="statusInput" placeholder="Status" type="text">
+          <option value="">Status</option>
+          <option value="active">Ativo</option>
+          <option value="closed">Fechado</option>
+          <option value="waiting">Aguardando</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,17 @@
+<div class="card-container">
+  <span class="status-{{occurence.status}}"></span>
+  <h2 class="titulo">{{occurence.title}}</h2>
+  <img src="{{occurence.image}}" alt="{{occurence.title}}">
+  <br><br>
+  <div class="description">
+  <p matTooltip="{{occurence.address}}">
+    {{occurence.address | slice: 0:80}}
+  </p>
+  <hr>
+  {{occurence.data}}
+  <hr>
+  {{occurence.user}}
+  <br>
+  <br>
+</div>
+</div>

@@ -1,0 +1,40 @@
+.card-container {
+  background-color: hsl(220, 3%, 83%);
+  border-radius: 15px;
+  .titulo {
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    padding-top: .5rem;
+  }
+  img {       
+    width: 250px;
+    height: 136px;
+    border-radius: 15px 0px 15px 15px;
+    object-fit: cover;
+  }
+  span {
+    display: block;
+    min-height: 5px;
+    height: 25px;
+    width: 50px;
+    border-radius:  0 15px 0 0;
+    float: right;
+  }
+  .status-active {
+    background-color: green;
+    z-index: -5;
+  }
+  .status-closed {
+    background-color: red;
+    z-index: -5;
+  }
+  .status-waiting {
+    background-color: yellow;
+    z-index: -5;
+  }
+}
+.description {
+  text-align: center;
+  padding-left: .5rem;    
+}

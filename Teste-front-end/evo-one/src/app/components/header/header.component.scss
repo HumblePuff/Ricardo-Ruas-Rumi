@@ -1,0 +1,75 @@
+:host {
+  border-bottom: 1px solid hsl(0, 0%, 53%);
+  padding: 0 3rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0 0rem;
+  }
+
+.logo {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: white;
+}
+
+
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    color: white;
+    
+    
+
+    .search-bar {
+      flex-grow: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      
+
+      .wrapper {
+        border: 1px solid hsl(0, 0%, 53%);
+        padding: .4rem .5rem .4rem 1.2rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 3rem;
+        color: white;
+
+        .date-input-wrapper, .status-input-wrapper {
+          margin-bottom: 3px;
+          color: white;
+
+
+          input, select {
+            border-bottom: 1px solid hsl(0, 0%, 100%);
+            color: white;
+            padding: .3rem;
+
+            &:focus {
+              border-color: #3F51B5;
+            }
+
+            &::placeholder {
+              color:hsl(0, 0%, 100%);
+            }
+          }
+        }
+
+        .date-input-wrapper {
+          padding-right: 1vw;
+          margin-right: 1vw;
+          border-right: 1px solid hsl(0, 0%, 85%);
+          
+        }
+      }
+
+    }
+  }
+
+}

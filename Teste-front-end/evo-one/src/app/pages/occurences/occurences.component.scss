@@ -1,0 +1,15 @@
+:host {
+  color: #000000DE;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-gap: .5rem;
+    justify-content: center;    
+  }
+
+  
+
+}
+
+
